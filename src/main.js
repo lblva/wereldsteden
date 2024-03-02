@@ -7,6 +7,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import {apiKey} from "./key.js";
 
 // init Swiper:
 const swiper = new Swiper('.swiper', {
@@ -37,8 +38,7 @@ async function getweather(){
     const lat = cityElement.dataset.lat;
     const lon = cityElement.dataset.lon;
     console.log(lat, lon);
-
-    const apiKey = 'a2ead12f7fcc92281f67f161c256b147';  
+ 
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`);
     const data = await response.json();
 
