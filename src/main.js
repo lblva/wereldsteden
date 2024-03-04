@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import { apiKey } from './key.js';
 
 // init Swiper:
-new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   // configure Swiper to use modules
   modules: [Navigation, Pagination],
   // Optional parameters
