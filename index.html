@@ -8,55 +8,71 @@
     <title>5 wereldsteden</title>
   </head>
   <body>
-
     <h1 class="titel">wereldsteden</h1>
 
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="/tokyo.jpg" alt="Tokyo">
-      <div class="temperature">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/tokyo.jpg" alt="Tokyo" />
+          <div class="temperature"></div>
+          <div class="image-text" data-lat="35.67368" data-lon="139.75868">
+            TOKYO
+            <div class="temperature__loader"></div>
+            , <span class="temperature__value"></span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="/paris.jpg" alt="Paris" />
+          <div class="temperature"></div>
+          <div class="image-text" data-lat="48.86450" data-lon="2.35115">
+            PARIS
+            <div class="temperature__loader"></div>
+            , <span class="temperature__value"></span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="/lagos.jpg" alt="Lagos" />
+          <div class="temperature"></div>
+          <div class="image-text" data-lat="37.11520" data-lon="-8.67377">
+            LAGOS
+            <div class="temperature__loader"></div>
+            , <span class="temperature__value"></span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="/riodejaneiro.jpg" alt="Rio De Janeiro" />
+          <div class="temperature"></div>
+          <div class="image-text" data-lat="-22.89642" data-lon="43.36152">
+            RIO DE JANEIRO
+            <div class="temperature__loader"></div>
+            , <span class="temperature__value"></span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="/newyork.jpg" alt="New York" />
+          <div class="temperature"></div>
+          <div class="image-text" data-lat="40.69645" data-lon="-73.91994">
+            NEW YORK
+            <div class="temperature__loader"></div>
+            , <span class="temperature__value"></span>
+          </div>
+        </div>
       </div>
-      <div class="image-text" data-lat="35.67368" data-lon="139.75868">TOKYO<div class="temperature__loader"></div>, <span class="temperature__value" ></span></div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
     </div>
 
-    <div class="swiper-slide">
-      <img src="/paris.jpg" alt="Paris">
-      <div class="temperature">
-      </div>
-      <div class="image-text" data-lat="48.86450" data-lon="2.35115">PARIS<div class="temperature__loader"></div>, <span class="temperature__value"></span></div>
-    </div>
-
-    <div class="swiper-slide">
-      <img src="/lagos.jpg" alt="Lagos">
-      <div class="temperature">
-      </div>
-      <div class="image-text" data-lat="37.11520" data-lon="-8.67377">LAGOS<div class="temperature__loader"></div>, <span class="temperature__value"></span></div>
-    </div>
-
-    <div class="swiper-slide">
-      <img src="/riodejaneiro.jpg" alt="Rio De Janeiro">
-      <div class="temperature">  
-      </div>
-      <div class="image-text" data-lat="-22.89642" data-lon="43.36152">RIO DE JANEIRO<div class="temperature__loader"></div>, <span class="temperature__value"></span></div>
-    </div>
-
-    <div class="swiper-slide">
-      <img src="/newyork.jpg" alt="New York">
-      <div class="temperature">
-      </div>
-      <div class="image-text" data-lat="40.69645" data-lon="-73.91994">NEW YORK<div class="temperature__loader"></div>, <span class="temperature__value"></span></div>
-    </div>
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
- 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
+    <canvas class="webgl"></canvas>
   </body>
 </html>
